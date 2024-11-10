@@ -1,0 +1,117 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styling */
+body {
+    background: #e9ecef; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.todo-container {
+    background: #ffffff; /* White background for the container */
+    padding: 30px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.todo-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for the title */
+}
+
+/* Input field and button styling */
+.todo-input,
+.add-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.todo-input {
+    border: 2px solid #28a745; /* Green border for input */
+    transition: border-color 0.3s;
+}
+
+.todo-input:focus {
+    border-color: #218838; /* Darker green when focused */
+}
+
+.add-btn {
+    background: #007bff; /* Blue background for add button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Task list styling */
+.task-list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0; /* Remove default padding */
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa; /* Light grey background for tasks */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #007bff; /* Blue left border for tasks */
+}
+
+.task-item:hover {
+    background: #e2e6ea; /* Darker grey on hover */
+}
+
+.task-checkbox {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Timing display for tasks */
+.task-time {
+    font-size: 0.9em; /* Smaller font size for timing */
+    color: #6c757d; /* Grey color for time text */
+    margin-left: 10px; /* Space between task text and time */
+}
+
+/* Delete button for tasks */
+.delete-btn {
+    background: #dc3545; /* Red background for delete button */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between task and delete button */
+}
+
+.delete-btn:hover {
+    background: #c82333; /* Darker red on hover */
+}
+
+/* Completed task styling */
+.completed {
+    text-decoration: line-through;
+    color: #888; /* Grey color for completed tasks */
+}
